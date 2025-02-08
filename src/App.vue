@@ -4,7 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <!-- Navbar fijo -->
-  <header class="navbar"> 
+  <header class="navbar">
     <div class="navbar-container">
       <!-- Logo y nombre -->
       <div class="brand">
@@ -15,15 +15,16 @@ import { RouterLink, RouterView } from 'vue-router'
           width="50"
           height="50"
         />
-        <h1>Hospital</h1>
+        <h1>Hospitals</h1>
       </div>
 
       <!-- rutas a archivos -->
       <nav class="nav-links">
+        
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/contact">Contact Us</RouterLink>
-        <RouterLink to="/faq">FAQ</RouterLink>    
+        <RouterLink to="/faq">FAQ</RouterLink>
       </nav>
     </div>
   </header>
@@ -71,7 +72,7 @@ import { RouterLink, RouterView } from 'vue-router'
 .nav-links a {
   margin-left: 1rem;
   text-decoration: none;
-  color: #333; 
+  color: #333;
   font-weight: 500;
 }
 
