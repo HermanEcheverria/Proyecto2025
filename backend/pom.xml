@@ -71,6 +71,20 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
+        <!-- Jakarta EE API para @Inject y otras anotaciones -->
+    <dependency>
+        <groupId>jakarta.annotation</groupId>
+        <artifactId>jakarta.annotation-api</artifactId>
+        <scope>provided</scope>
+    </dependency>
+
+    <!-- Jakarta WS para JAX-RS -->
+    <dependency>
+        <groupId>jakarta.ws.rs</groupId>
+        <artifactId>jakarta.ws.rs-api</artifactId>
+        <scope>provided</scope>
+    </dependency>
+
   </dependencies>
   <build>
     <plugins>

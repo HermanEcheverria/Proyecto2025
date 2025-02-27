@@ -29,7 +29,7 @@ import RecetaView from "../views/RecetaView.vue";
 import MyAccountUsuarioInter from "@/views/MyAccountUsuarioInter.vue";
 import UsuarioInterAdmin from "@/views/UsuarioInterAdmin.vue";
 import AdminFichasTecnicas from "@/views/admin/AdminFichasTecnicas.vue";
-
+import AuditoriaView from "@/views/admin/AuditoriaView.vue";
 
 
 // Función para verificar si el usuario está autenticado
@@ -85,6 +85,8 @@ const router = createRouter({
     { path: "/admin/servicios", component: AdminServiciosView, beforeEnter: requireRole(1) },
     { path: "/admin/doctor", name: "admin-doctor", component: DoctorAdmin, beforeEnter: requireRole(1) },
     { path: "/admin/usuario-interconexion", name: "admin-usuario-interconexion", component: UsuarioInterAdmin, beforeEnter: requireRole(1) },
+    { path: "/admin/auditoria", name: "admin-auditoria", component: AuditoriaView, beforeEnter: requireRole(1) },
+
     { path: "/admin/fichas-tecnicas", name: "admin-fichas-tecnicas", component: AdminFichasTecnicas, beforeEnter: requireRole(1) },
 
     //  Rutas protegidas de "My Account" según el rol
