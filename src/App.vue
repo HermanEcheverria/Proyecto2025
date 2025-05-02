@@ -81,7 +81,7 @@ const myAccountRoute = () => {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: #f28e01;
   border-bottom: 2px solid #e0e0e0;
   z-index: 1000;
   padding: 10px 0;
@@ -155,7 +155,7 @@ const myAccountRoute = () => {
 }
 
 .footer {
-  background-color: #13678a;
+  background-color: #f28e01;
   color: white;
   text-align: center;
   padding: 15px 0;
